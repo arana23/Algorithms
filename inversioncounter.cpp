@@ -65,7 +65,7 @@ static long mergesort(int array[], int scratch[], int low, int high) {
         //center calc
 		center=(low + high)/2; 
         
-        //utilize calling mergesort
+        //utilize calling mergesort to further arrange
 		count=mergesort(array, scratch, low, center);
 		count+=mergesort(array, scratch, center+1, high);
         
